@@ -2,6 +2,8 @@ s1 = {10,"sai", 20,30}
 s2 = {"kiran Academy",50,30,"sai","Pune"}
 print("This is Set 1:",s1)
 print("This is Set 2:",s2)
+s1.add("New Element")
+print("Add Element to Set 1:",s1 )
 print("This is Intersection of Sets",s1.intersection(s2))  
 print("This is Union of Sets",s1.union(s2))
 
@@ -21,3 +23,8 @@ for value in l1:
         set1[value] =1 
 for value in l2:
     print("delete",value,"=",set1[value]-1,"time")
+
+print("---------Frozenset Example:-----------")
+fs = frozenset([10,20,30,40,50])
+print("This is Frozenset:",fs)
+print("Type of fs is:",type(fs))
