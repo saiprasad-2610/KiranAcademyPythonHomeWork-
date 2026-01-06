@@ -37,13 +37,15 @@ movies2023["Virupaksha"] = virupaksha_cast23
 
 
 allMovies = {2025: movies2025, 2024: movies2024, 2023: movies2023}
-
+count = 0
 print("Actors/Actresses :>> Prabhas, Sanjay Dutt, Mahesh Babu, Sreeleela")
 UserMovie = input("Enter the Ator/Actress(From Above list) Name to search the movies: ")
 for year in allMovies.keys():
     movies = allMovies[year]
     for movie in movies.keys():
         if UserMovie in movies[movie]:
-            print(UserMovie," acted in the movie:", movie, "in the year:", year)
-            
+            count += 1
+            print("The movie:", movie, "in the year:", year)
+    
+print(UserMovie,"Acted in",count,"movies...")
 
