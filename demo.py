@@ -52,5 +52,5 @@
 # def cal(x=5):
 #     return x+2;
 # print(cal(4))
-ls=[10,20,30,40]
-print(ls.map(+5))
+# ls=[10,20,30,40]
+# print(ls.map(+5))
